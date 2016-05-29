@@ -1,0 +1,48 @@
+% This is a beamer template for iRL meetings.
+% Last modified at May, 29, 2016 by Ying-Hao Chen
+
+\documentclass[slides]{beamer}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{algorithm,algorithmic}
+\setbeamertemplate{theorems}[numbered]
+\mode<presentation>{
+	\usetheme{CambridgeUS}
+	\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=0.3,anchor=south west]at (current page.south west){\includegraphics[width=5cm]{irl.png}};}
+	\title{iRL Meeting}
+}
+\subtitle{Readings}
+\author{Jay Chen}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+% title frame
+	\begin{frame}
+	    \titlepage
+	\end{frame}
+
+%%% Start from there
+
+\section{Introduction}
+\begin{frame}{Introduction}
+	% Title : Completing any Low-rank Matrix, Provably \\
+	% Authors : \\
+	% \begin{tabular}{c l l}
+	% 	& Y. Chen, UCB & \\
+	% 	& S. Bhojanapalli, UT Austin & \\
+	% 	& J. Sanghavi, UT Austin & \\
+	% 	& R. Ward, UT Austin & \\
+	% 	& & {\it Journal of Machine Learning 16, (2015)} \\
+	% \end{tabular}
+\end{frame}
+
+
+\end{document}
